@@ -1,31 +1,54 @@
 # ReadAny
-An application which can read any books and pdf. To use it locally you need to run the following insturctions
 
-## Instructions
+ReadAny is an application that can read books and PDFs aloud. This README provides instructions for setting up and using the application locally.
 
-Create an enviroment using conda or venv
+## Prerequisites
 
-### Venv
-to create a venv enviroment in python 3.12 follow the following instruction
-```bash
-#install the virtualenv
-pip install virtualenv
-#creating env
-python -m venv env
-#activating  env
-source env/bin/activate
-```
-### Conda
-to create an enviroment using conda 
-```bash
-# Creating an env 
-conda create env python=3.12
-# Activating env
-conda activate env
-```
-### Requiremnts
+- Python 3.12 or higher
+- pip (Python package installer)
 
-After activating an env install the requirements
+## Setup Instructions
+
+Choose one of the following methods to create a virtual environment:
+
+### Option 1: Using venv
+
+1. Install virtualenv:
+   ```bash
+   pip install virtualenv
+   ```
+
+2. Create a virtual environment:
+   ```bash
+   python -m venv env
+   ```
+
+3. Activate the virtual environment:
+   - On Windows:
+     ```bash
+     env\Scripts\activate
+     ```
+   - On macOS and Linux:
+     ```bash
+     source env/bin/activate
+     ```
+
+### Option 2: Using Conda
+
+1. Create a Conda environment:
+   ```bash
+   conda create --name readany python=3.12
+   ```
+
+2. Activate the Conda environment:
+   ```bash
+   conda activate readany
+   ```
+
+## Installing Dependencies
+
+After activating your chosen environment, install the required packages:
+
 ```bash
 pip install -r requirements.txt
 ```
