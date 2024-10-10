@@ -10,7 +10,7 @@ def total_pages(file) -> int:
 def read_single_page_text(pages,page_num) -> str:
     file = pdf_file(pages)
     page = file.pages[page_num]
-    return page.extract_text()
+    return page_num, page.extract_text()
     
 if __name__ == "__main__":
-    print(read_single_page_text('../Artificial Intelligence A Modern Approach.pdf',20))
+    print(read_single_page_text('../Artificial Intelligence A Modern Approach.pdf',22)[1])
