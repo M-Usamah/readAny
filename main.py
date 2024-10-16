@@ -1,4 +1,4 @@
-from src.read_pdf import read_single_page_text, total_pages
+from src.read_pdf import read_and_convert_page, total_pages
 from transformers import VitsModel, AutoTokenizer
 from src.txt_audio import process_long_text
 import torch
@@ -28,7 +28,7 @@ def main():
     model = model.to(device)
 
     while 0 <= page_num < pages:
-        content_info = read_single_page_text(book, page_num)
+        content_info = read_and_convert_page(book, page_num)
         content = content_info[1]
         output_file = f"page_{page_num}.wav"
         process_long_text(content, model, tokenizer, device, output_file=output_file)
