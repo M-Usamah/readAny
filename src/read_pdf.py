@@ -37,6 +37,6 @@ def read_and_convert_page(file, page_num) -> tuple[int, str]:
     return page_num, contant
 
 if __name__ == "__main__":
-    file_path = 'CHEATING AUTOMATIC LLM BENCHMARKS: NULL MODELS ACHIEVE HIGH WIN RATES.pdf'
+    file_path = 'CHEATING AUTOMATIC LLM BENCHMARKS: NULL MODELS ACHIEVE HIGH WIN RATES.pdf '
     converted_text = read_and_convert_page(file_path, 0)
     print(converted_text[1])

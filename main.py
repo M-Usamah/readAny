@@ -1,4 +1,4 @@
-from src.read_pdf import read_and_convert_page, total_pages
+from src.read_pdf import read_and_convert_page, total_pages 
 from transformers import VitsModel, AutoTokenizer
 from src.txt_audio import process_long_text
 import torch
@@ -45,7 +45,7 @@ def main():
             1) Next Page (n)
             2) Replay (r)
             3) Previous Page (p)
-            4) Exit (e)
+            4) Exit (e) 
             ''')
 
             if in_page.lower() == 'n':
