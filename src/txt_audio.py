@@ -56,7 +56,7 @@ if __name__ == "__main__":
     Artificial intelligence has transformed various aspects of our lives, from voice assistants to autonomous vehicles. 
     As we continue to push the boundaries of what's possible with AI, we must also consider the ethical implications 
     and potential risks associated with these advancements. Responsible development and deployment of AI technologies 
-    are crucial to ensure that they benefit society as a whole while minimizing potential harm.
+    are crucial to ensure that they benefit society as a whole while minimizing potential harm
     """
 
     process_long_text(long_text, model, tokenizer, device)
